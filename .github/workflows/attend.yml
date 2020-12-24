@@ -3,6 +3,10 @@ on:
   schedule:
     - cron: '* 1 * * *'
 
+env:
+  G_MARKET_ID: ${{ secrets.G_MARKET_ID }}
+  G_MARKET_PASSWORD: ${{ secrets.G_MARKET_PASSWORD }}
+
 jobs:
   cypress-run:
     runs-on: ubuntu-18.04
