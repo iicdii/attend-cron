@@ -1,0 +1,16 @@
+{
+  "name": "attend-cron",
+  "version": "1.0.0",
+  "description": "Domestic site attendance check using Cypress and actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "repository": "git@github.com:iicdii/attend-cron.git",
+  "author": "Harim Kim <harimkims@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "^6.2.0",
+    "dotenv": "^8.2.0"
+  }
+}
