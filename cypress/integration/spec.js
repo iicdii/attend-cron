@@ -19,6 +19,10 @@ describe('Attend to', () => {
       .click();
     cy.get('iframe#AttendRulletFrame').then(function($iframe) {
       const $body = $iframe.contents().find('body');
+      const $win = $iframe[0].contentWindow;
+      // Handling alert
+      cy.stub($win, 'alert').as('windowAlert');
+
       cy.wrap($body)
         .find('a.button_start')
         .click();
