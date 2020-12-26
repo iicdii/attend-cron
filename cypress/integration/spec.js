@@ -2,7 +2,6 @@ describe('Attend to', () => {
   it('GMarket', () => {
     const G_MARKET_ID = Cypress.env('G_MARKET_ID');
     const G_MARKET_PASSWORD = Cypress.env('G_MARKET_PASSWORD');
-    cy.log(Cypress.env().toString());
 
     cy.visit(
       'https://signinssl.gmarket.co.kr/login/login?url=http://promotion.gmarket.co.kr/Event/pluszone.asp'
